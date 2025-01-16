@@ -54,6 +54,6 @@ ul {
   }
 }
 
-line {
-  transform-origin: top;
+.skills {
+  @apply md:mb-8 max-w-xl pl-6;
 }

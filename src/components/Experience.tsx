@@ -93,7 +93,7 @@ const Experience = () => {
                 E2E tests in Ruby (Rspec).
               </li>
             </ul>
-            <div className="skills">
+            <div className="skills ">
               <Chip skill="react" />
               <Chip skill="react-testing-library" />
               <Chip skill="jest" />

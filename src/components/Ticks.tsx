@@ -9,9 +9,9 @@ const Tick = () => {
   const y = useParallax(scrollYProgress, 100);
 
   return (
-    <section className="py-6 sm:pb-20 overflow-auto">
+    <section className="py-6 pb-20 md:pb-6 overflow-auto">
       <h2 className="section-header">⛵️ What floats my boat...</h2>
-      <div className="grid md:gap-8 md:max-w-screen-lg md:grid-cols-2 pb-20 md:pb-6">
+      <div className="grid md:gap-8 md:max-w-screen-lg md:grid-cols-2">
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
