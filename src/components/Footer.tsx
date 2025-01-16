@@ -15,8 +15,8 @@ const Footer = () => {
   }, []);
 
   return (
-    <section>
-      <h2 className="section-header">🧩 Get in touch</h2>
+    <section className="py-6">
+      <h2 className="section-header">👉 Get in touch</h2>
       <div className="grid gap-8 md:max-w-screen-lg">
         <motion.div
           initial={{ opacity: 0 }}
@@ -31,6 +31,7 @@ const Footer = () => {
           <h3 className="text-2xl">
             Currently looking out for new opportunities
           </h3>
+          <p>If you have a mid to senior leaning role I'd love to hear more.</p>
 
           <p className="my-4 space-x-2">
             <a

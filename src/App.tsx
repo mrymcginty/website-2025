@@ -5,9 +5,11 @@ function App() {
   return (
     <div className="p-8">
       <Header />
-      <Seperator />
+      <Seperator delay={1.5} />
       <Experience />
+      <Seperator />
       <Ticks />
+      <Seperator />
       <Footer />
     </div>
   );

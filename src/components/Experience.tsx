@@ -3,7 +3,7 @@ import ExperiencePanel from "./ExperiencePanel";
 
 const Experience = () => {
   return (
-    <section>
+    <section className="py-6">
       <motion.div>
         <h2 className="section-header">💼 Experience</h2>
         <ExperiencePanel

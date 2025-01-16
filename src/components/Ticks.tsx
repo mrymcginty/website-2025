@@ -9,9 +9,9 @@ const Tick = () => {
   const y = useParallax(scrollYProgress, 100);
 
   return (
-    <section>
+    <section className="py-6 sm:pb-20 overflow-auto">
       <h2 className="section-header">⛵️ What floats my boat...</h2>
-      <div className="grid gap-8 md:max-w-screen-lg md:grid-cols-2">
+      <div className="grid md:gap-8 md:max-w-screen-lg md:grid-cols-2 pb-20 md:pb-6">
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
@@ -22,7 +22,7 @@ const Tick = () => {
           }}
           className="md:pl-6 pl-2"
         >
-          <h3 className="text-2xl ml-6">In the office</h3>
+          <h3 className="text-2xl">In the office</h3>
           <ul className="custom-list custom-list--ticks">
             <li>👯 Working with smart people.</li>
             <li>🐝 The buzz of solving a problem.</li>
@@ -49,10 +49,10 @@ const Tick = () => {
           initial={{ visibility: "hidden" }}
           animate={{ visibility: "visible" }}
           style={{ y }}
-          className="md:pl-6"
+          className="md:pl-6 pl-2"
         >
           <div>
-            <h3 className="text-2xl ml-6">Outside of the office</h3>
+            <h3 className="text-2xl">Outside of the office</h3>
             <ul className="custom-list">
               <li>
                 ☕️ Good coffee and food, I love to keep an eye on the new

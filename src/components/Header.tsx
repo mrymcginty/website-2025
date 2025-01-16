@@ -3,16 +3,12 @@ import { FaLinkedin } from "react-icons/fa";
 
 const variants = {
   visible: {
-    opacity: 1,
-    y: 0,
     transition: {
       when: "beforeChildren",
       staggerChildren: 0.3, // Stagger children by .3 seconds
     },
   },
   hidden: {
-    opacity: 0,
-    y: 20,
     transition: {
       when: "afterChildren",
     },
@@ -24,10 +20,15 @@ const item = {
   hidden: { opacity: 0, y: 10 },
 };
 
-const Header = () => (
-  <header className="header pt-20">
-    <section>
-      <motion.div variants={variants} initial="hidden" whileInView="visible">
+const Header = () => {
+  return (
+    <header className="header pt-20 pb-6">
+      <motion.div
+        variants={variants}
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true }}
+      >
         <motion.h2
           variants={item}
           className="md:text-6xl text-4xl font-bold mb-1"
@@ -36,7 +37,26 @@ const Header = () => (
         </motion.h2>
         <motion.h1 variants={item}>
           <span className="md:text-6xl text-4xl">
-            a Software Engineer, based in Dublin 👋
+            a Software Engineer, based in Dublin{" "}
+            <motion.span
+              className="inline-block origin-[75%_75%] cursor-pointer"
+              animate={{ rotate: [0, 30, 0] }}
+              transition={{
+                duration: 0.3,
+                delay: 2,
+                repeat: 3,
+              }}
+              whileHover={{
+                rotate: [0, 30, 0],
+                transition: {
+                  duration: 0.3,
+                  delay: 0,
+                  repeat: Infinity,
+                },
+              }}
+            >
+              👋
+            </motion.span>
           </span>
         </motion.h1>
         <motion.div variants={item}>
@@ -57,8 +77,8 @@ const Header = () => (
           </div>
         </motion.div>
       </motion.div>
-    </section>
-  </header>
-);
+    </header>
+  );
+};
 
 export default Header;

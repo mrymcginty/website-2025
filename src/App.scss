@@ -31,14 +31,13 @@
 }
 
 section {
-  @apply min-h-screen py-40;
   .section-header {
     @apply md:text-4xl text-2xl font-bold mb-6;
   }
 }
 
 ul {
-  padding-left: 2em;
+  @apply pl-1 md:pl-2;
   margin: 1em 0;
   li {
     padding: 0 0 0 1em;
@@ -46,11 +45,15 @@ ul {
   }
 }
 .custom-list {
-  @apply mb-8 max-w-xl;
+  @apply md:mb-8 max-w-xl;
   &--checkbox {
     li::before {
       content: "✅";
       padding-right: 0.5em;
     }
   }
+}
+
+line {
+  transform-origin: top;
 }
