@@ -20,7 +20,7 @@ const Tick = () => {
             duration: 0.4,
             scale: { type: "spring", visualDuration: 0.4 },
           }}
-          className="md:pl-6 pl-2"
+          className="md:pl-6"
         >
           <h3 className="text-2xl">In the office</h3>
           <ul className="custom-list custom-list--ticks">
@@ -49,7 +49,7 @@ const Tick = () => {
           initial={{ visibility: "hidden" }}
           animate={{ visibility: "visible" }}
           style={{ y }}
-          className="md:pl-6 pl-2"
+          className="md:pl-6"
         >
           <div>
             <h3 className="text-2xl">Outside of the office</h3>

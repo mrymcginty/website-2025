@@ -14,6 +14,7 @@ export default {
       zinc: "#f5f5f5",
       red: "#ff0000",
       orange: "#f97316",
+      green: "#22c55e",
     },
     fontFamily: {
       sans: ["Rubik", "Graphik", "sans-serif"],
