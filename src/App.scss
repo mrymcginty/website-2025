@@ -1,0 +1,56 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html,
+  body,
+  #root {
+    @apply bg-zinc;
+  }
+  h1 {
+    @apply text-5xl;
+  }
+  h2 {
+    @apply text-2xl;
+  }
+  h3 {
+    @apply text-xl;
+  }
+}
+
+.scroll-progress {
+  position: fixed;
+  left: 0px;
+  width: 5px;
+  background: red;
+  top: 0;
+  bottom: 0;
+  transform: scaleY(0);
+  transform-origin: 0 0;
+}
+
+section {
+  @apply min-h-screen py-40;
+  .section-header {
+    @apply md:text-4xl text-2xl font-bold mb-6;
+  }
+}
+
+ul {
+  padding-left: 2em;
+  margin: 1em 0;
+  li {
+    padding: 0 0 0 1em;
+    text-indent: -1.5em;
+  }
+}
+.custom-list {
+  @apply mb-8 max-w-xl;
+  &--checkbox {
+    li::before {
+      content: "✅";
+      padding-right: 0.5em;
+    }
+  }
+}
